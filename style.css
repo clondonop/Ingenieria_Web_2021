@@ -3,7 +3,7 @@
     src: url("./Fonts/Sansita/Sansita-Regular.ttf");
 }
 @font-face{
-    font-family: Sansita Bold;
+    font-family: Sansita B;
     src: url("./Fonts/Sansita/Sansita-Bold.ttf");
 }
 body{
@@ -11,49 +11,78 @@ body{
     background-image: url("./Images/milky-way.jpg");
   
 }
+
+.Titulos{
+    margin: 15px;
+    text-align: center;
+    color: #00507a;
+    font-family: Sansita B;
+}
+
 nav#navegacion{
-    background-color: #dee8fc;
+    background-color: #eff3fc;
     font-family: Sansita;
-    color: #0077b6;
+    color: #00507a;
 }
 #icononav{
     width:5vw;
     height: 5vw;
 }
+#buscar{
+    color: #0077b6;
+    border: 1px solid #0077b6;
+}
+
+#bordeimg{
+    filter: drop-shadow(0 0 30px #caf0f8);
+    border-radius: 21px 21px 20px 20px;
+}
+#primertxt{
+    background-color: #caf0f8;
+    border-radius: 21px 21px 20px 20px;
+    padding: 35px 10px;
+    text-align: center;
+    color:#03045e ;
+}
+
+#textocarrusel{
+    color: #000000;
+    background-color: #f7f7f7;
+    border-radius: 21px 21px 20px 20px;
+    justify-self: left;
+}
+
+#cajades1{
+    background-color: #03045e;
+}
+#cajades2{
+    background-color: #caf0f8;
+    color: #03043a ;
+}
 #cajafoto{
     width: 80%;
-    height: 60%; 
     border-radius: 21px;
     background-color: #03045e;
 }
 #foto{
-    width: 98%;
-    height: 98%;
-    border-radius: 21px 21px 20px 20px;
+    width: 98%;    
+    border-radius: 21px ;
     align-items: center;
     justify-content: center;
 }
-#cajades1{
-background-color: #03045e;
-}
-#cajades2{
-background-color: #caf0f8;
-color: #03043a ;
-}
-#fondo{
-    background-color: #ffff;
-}
-#buscar{
-    color: #0077b6;
-    border: 1px solid #0077b6;
-    
-}
-#textocarrusel{
-    color: #000000;
-background-color: #f7f7f7;
-border-radius: 21px 21px 20px 20px;
-justify-self: left;
-}
 #face{
+    margin: 10px;
+}
+
+#fotointereses{
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+#ufc{
+    margin:160px 10px ;
+}
+#texto{
     margin: 10px;
 }
