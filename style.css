@@ -106,22 +106,15 @@ h2#caro{
     margin-right: auto;
   }
   .div-img .fotointereses {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     transform: scale(1);
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
+
+    transition: all 500ms ease-in-out;
+    
   }
   .div-img .texto {
     font-family: 'Sansita';
@@ -130,19 +123,12 @@ h2#caro{
     text-align: center;
     width: 100%;
     transform: translate(0px);
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     opacity: 0;
     transition: transfom opacity 1.5s;
   }
   .div-img:hover .fotointereses {
     transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -o-transform: scale(0.8);
   }
   .div-img:hover .texto {
     transform: translate(0px, -20px);
@@ -151,21 +137,21 @@ h2#caro{
 
   @-webkit-keyframes hvr-buzz {
     50% {
-      -webkit-transform: translateX(3px) rotate(2deg);
+     
       transform: translateX(3px) rotate(2deg);
     }
     100% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
+    
       transform: translateX(-3px) rotate(-2deg);
     }
   }
   @keyframes hvr-buzz {
     50% {
-      -webkit-transform: translateX(3px) rotate(2deg);
+     
       transform: translateX(3px) rotate(2deg);
     }
     100% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
+      
       transform: translateX(-3px) rotate(-2deg);
     }
   }
@@ -177,12 +163,12 @@ h2#caro{
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   }
   .hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
-    -webkit-animation-name: hvr-buzz;
+   
     animation-name: hvr-buzz;
-    -webkit-animation-duration: 0.15s;
+    
     animation-duration: 0.15s;
-    -webkit-animation-timing-function: linear;
+    
     animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
+    
     animation-iteration-count: infinite;
   }
