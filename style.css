@@ -8,75 +8,24 @@
 }
 body{
     font-family: Sansita;
-    background-image: url("./Images/milky-way.jpg");
+    background-color: #000000;
   
 }
+
 
 .Titulos{
     margin: 15px;
     text-align: center;
-    color: #00507a;
+    color: #d40c10;
     font-family: Sansita B;
 }
 
-nav#navegacion{
-    background-color: #010227;
-    font-family: Sansita;
-}
 #icononav{
     width:5vw;
     height: 5vw;
 }
 
-.bordeimg{
-    filter: drop-shadow(0 0 30px #caf0f8);
-    border-radius: 21px 21px 20px 20px;
-}
-#primertxt{
-    background-color: #caf0f8;
-    border-radius: 21px 21px 20px 20px;
-    padding: 35px 10px;
-    text-align: center;
-    color:#03045e ;
-}
 
-.textocarrusel{
-    color: #000000;
-    background-color: #f7f7f7;
-    border-radius: 21px 21px 20px 20px;
-    justify-self: left;
-}
-
-#cajades1{
-    background-color: #03045e;
-    color: #fff;
-}
-#cajades2{
-    background-color: #caf0f8;
-    color: #03043a ;
-}
-#cajafoto{
-    width: 80%;
-    border-radius: 21px;
-    background-color: #03045e;
-}
-#cajafoto1{
-    width: 80%;
-    border-radius: 21px;
-    background-color: #fff;
-}
-.foto{
-    width: 98%;    
-    border-radius: 21px ;
-    align-items: center;
-    justify-content: center;
-}
-.face{
-    margin: 10px;
-}
-.texto{
-    margin: 10px;
-}
 /* Animaciones */
 
 .contenedor:hover .bordeimg {
@@ -88,7 +37,7 @@ nav#navegacion{
 }
 
 h2 {
-    background-image: linear-gradient(transparent calc(65% - 5px), #0608b2 5px);
+    background-image: linear-gradient(transparent calc(65% - 5px), #d40c0fc9 5px);
     background-size: 0;
     background-repeat: no-repeat;
     display: inline;
@@ -97,78 +46,3 @@ h2 {
 h2:hover  {
     background-size: 100%;
 }
-h2#caro{
-    background-image: linear-gradient(transparent calc(65% - 5px), #90e0ef 5px);
- }
-.div-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .div-img .fotointereses {
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    transform: scale(1);
-
-    transition: all 500ms ease-in-out;
-    
-  }
-  .div-img .texto {
-    font-family: 'Sansita';
-    padding-top: 5px;
-    display: block;
-    text-align: center;
-    width: 100%;
-    transform: translate(0px);
-    transition: all 500ms ease-in-out;
-    opacity: 0;
-    transition: transfom opacity 1.5s;
-  }
-  .div-img:hover .fotointereses {
-    transform: scale(0.8);
-  }
-  .div-img:hover .texto {
-    transform: translate(0px, -20px);
-    opacity: 1;
-  }
-
-  @-webkit-keyframes hvr-buzz {
-    50% {
-     
-      transform: translateX(3px) rotate(2deg);
-    }
-    100% {
-    
-      transform: translateX(-3px) rotate(-2deg);
-    }
-  }
-  @keyframes hvr-buzz {
-    50% {
-     
-      transform: translateX(3px) rotate(2deg);
-    }
-    100% {
-      
-      transform: translateX(-3px) rotate(-2deg);
-    }
-  }
-  .hvr-buzz {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
-   
-    animation-name: hvr-buzz;
-    
-    animation-duration: 0.15s;
-    
-    animation-timing-function: linear;
-    
-    animation-iteration-count: infinite;
-  }
