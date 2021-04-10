@@ -1,13 +1,8 @@
-@font-face{
-    font-family: Sansita;
-    src: url("./Fonts/Sansita/Sansita-Regular.ttf");
-}
-@font-face{
-    font-family: Sansita B;
-    src: url("./Fonts/Sansita/Sansita-Bold.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body{
-    font-family: Sansita;
+    font-family: 'Roboto';
     background-color: #000000;
   
 }
@@ -17,7 +12,7 @@ body{
     margin: 15px;
     text-align: center;
     color: #d40c10;
-    font-family: Sansita B;
+    font-family: 'Bebas Neue';
 }
 
 #icononav{
