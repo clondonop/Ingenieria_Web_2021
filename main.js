@@ -1,27 +1,27 @@
-let url="https://fly.sportsdata.io/v3/mma/scores/json/";
-let key="?key=a422a6ac8b9e40268d59c9fd08a10fdb";
+let url = "https://fly.sportsdata.io/v3/mma/scores/json/";
+let key = "?key=a422a6ac8b9e40268d59c9fd08a10fdb";
 
 function obtenerPeleas() {
-    let urlPelea = url+"UFC/2021";
-    return new Promise(function(resolve,reject) {
-        $.get(urlPeleador+id+key, { crossDomain: true }, function(data){
+    let urlPelea = url + "UFC/2021";
+    return new Promise(function (resolve, reject) {
+        $.get(urlPeleador + id + key, { crossDomain: true }, function (data) {
             resolve(data);
-        }).fail(function(error){
+        }).fail(function (error) {
             reject(error);
         });
-        
+
     });
 }
 
-function obtenerPeleador(id){
-    let urlPeleador = url+"Fighter/";
-    return new Promise(function(resolve,reject) {
-        $.get(urlPeleador+id+key, { crossDomain: true }, function(data){
+function obtenerPeleador(id) {
+    let urlPeleador = url + "Fighter/";
+    return new Promise(function (resolve, reject) {
+        $.get(urlPeleador + id + key, { crossDomain: true }, function (data) {
             resolve(data);
-        }).fail(function(error){
+        }).fail(function (error) {
             reject(error);
         });
-        
+
     });
 }
 
@@ -132,61 +132,192 @@ const paja9 = document.getElementById("paja9");
 const paja10 = document.getElementById("paja10");
 
 
-const gallo1f = document.getElementById("gallo1f");
-const gallo2f = document.getElementById("gallo2f");
-const gallo3f = document.getElementById("gallo3f");
-const gallo4f = document.getElementById("gallo4f");
-const gallo5f = document.getElementById("gallo5f");
-const gallo6f = document.getElementById("gallo6f");
-const gallo7f = document.getElementById("gallo7f");
-const gallo8f = document.getElementById("gallo8f");
-const gallo9f = document.getElementById("gallo9f");
-const gallo10f = document.getElementById("gallo10f");
+const gallo1F = document.getElementById("gallo1F");
+const gallo2F = document.getElementById("gallo2F");
+const gallo3F = document.getElementById("gallo3F");
+const gallo4F = document.getElementById("gallo4F");
+const gallo5F = document.getElementById("gallo5F");
+const gallo6F = document.getElementById("gallo6F");
+const gallo7F = document.getElementById("gallo7F");
+const gallo8F = document.getElementById("gallo8F");
+const gallo9F = document.getElementById("gallo9F");
+const gallo10F = document.getElementById("gallo10F");
 
 
-const mosca1f = document.getElementById("mosca1f");
-const mosca2f = document.getElementById("mosca2f");
-const mosca3f = document.getElementById("mosca3f");
-const mosca4f = document.getElementById("mosca4f");
-const mosca5f = document.getElementById("mosca5f");
-const mosca6f = document.getElementById("mosca6f");
-const mosca7f = document.getElementById("mosca7f");
-const mosca8f = document.getElementById("mosca8f");
-const mosca9f = document.getElementById("mosca9f");
-const mosca10f = document.getElementById("mosca10f");
+const mosca1F = document.getElementById("mosca1F");
+const mosca2F = document.getElementById("mosca2F");
+const mosca3F = document.getElementById("mosca3F");
+const mosca4F = document.getElementById("mosca4F");
+const mosca5F = document.getElementById("mosca5F");
+const mosca6F = document.getElementById("mosca6F");
+const mosca7F = document.getElementById("mosca7F");
+const mosca8F = document.getElementById("mosca8F");
+const mosca9F = document.getElementById("mosca9F");
+const mosca10F = document.getElementById("mosca10F");
 
 
-const paja1f = document.getElementById("paja1f");
-const paja2f = document.getElementById("paja2f");
-const paja3f = document.getElementById("paja3f");
-const paja4f = document.getElementById("paja4f");
-const paja5f = document.getElementById("paja5f");
-const paja6f = document.getElementById("paja6f");
-const paja7f = document.getElementById("paja7f");
-const paja8f = document.getElementById("paja8f");
-const paja9f = document.getElementById("paja9f");
-const paja10f = document.getElementById("paja10f");
+const paja1F = document.getElementById("paja1F");
+const paja2F = document.getElementById("paja2F");
+const paja3F = document.getElementById("paja3F");
+const paja4F = document.getElementById("paja4F");
+const paja5F = document.getElementById("paja5F");
+const paja6F = document.getElementById("paja6F");
+const paja7F = document.getElementById("paja7F");
+const paja8F = document.getElementById("paja8F");
+const paja9F = document.getElementById("paja9F");
+const paja10F = document.getElementById("paja10F");
 
 
-async function informacionPeleador(elemento,id){
+async function informacionPeleador(elemento, id) {
     await obtenerPeleador(id)
-    .then(function({FirstName,LastName,Nickname,WeightClass,BirthDate,Height,Weight,Reach,Wins,Losses,Draws,NoContests,TechnicalKnockouts,TechnicalKnockoutsLosses,Submissions,SubmissionLosses,TitleWins,TitleLosses,TitleDraws,CareerStats}) {
-        elemento.insertAdjacentHTML('beforeend', "El peleador se llama "+FirstName+" "+LastName+", su apodo es "+Nickname+ ", pertenece a la categoria "+WeightClass+", pesa "+Weight+"lb, mide  "+(Height/39.370) +"m, ha tenido  "+Wins+" victorias, de las cuales "+TechnicalKnockouts+" han sido por K.O,  "+Submissions+" han sido por sumisión, ha empatado "+Draws+", y perdido "+Losses+" veces" );
+        .then(function ({ FirstName, LastName, Nickname, WeightClass, Height, Weight,  Wins, Losses, Draws, TechnicalKnockouts,  Submissions }) {
+            elemento.insertAdjacentHTML('beforeend', "El peleador se llama " + FirstName + " " + LastName + ", su apodo es " + Nickname + ", pertenece a la categoria " + WeightClass + ", pesa " + Weight + "lb, mide  " + (Height / 39.370) + "m, ha tenido  " + Wins + " victorias, de las cuales " + TechnicalKnockouts + " han sido por K.O,  " + Submissions + " han sido por sumisión, ha empatado " + Draws + ", y perdido " + Losses + " veces");
 
-    });
+        });
 }
 
-async function informacionTop(elemento,id){
+async function informacionTop(elemento, id) {
     await obtenerPeleador(id)
-    .then(function({FirstName,LastName}) {
-        elemento.insertAdjacentHTML('beforeend',FirstName+" "+LastName);
-    
-    })
-    .catch(function(error){
-        console.log(error);
-    });
+        .then(function ({ FirstName, LastName }) {
+            elemento.insertAdjacentHTML('beforeend', FirstName + " " + LastName);
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 
 }
 
-
-
+// Campeones 
+informacionPeleador(camp1, 140000215);
+informacionPeleador(camp2, 140000086);
+informacionPeleador(camp3, 140000347);
+informacionPeleador(camp4, 140000145);
+informacionPeleador(camp5, 140000074);
+informacionPeleador(camp6, 140000074);
+informacionPeleador(camp7, 140000098);
+informacionPeleador(camp8, 140000141);
+informacionPeleador(camp9, 140000402);
+informacionPeleador(camp10, 140000446);
+// Top 10 Pesado
+informacionTop(pesado1, 140000558);
+informacionTop(pesado2, 140000173);
+informacionTop(pesado3, 140000218);
+informacionTop(pesado4, 140000534);
+informacionTop(pesado5, 140000647);
+informacionTop(pesado6, 140000034);
+informacionTop(pesado7, 140000271);
+informacionTop(pesado8, 140000323);
+informacionTop(pesado9, 140000299);
+informacionTop(pesado10, 140000992);
+// Top 10 Semi
+informacionTop(semi1, 140000015);
+informacionTop(semi2, 140000387);
+informacionTop(semi3, 140000193);
+informacionTop(semi4, 140000124);
+informacionTop(semi5, 140000918);
+informacionTop(semi6, 140000147);
+informacionTop(semi7, 140000113);
+informacionTop(semi8, 140000192);
+informacionTop(semi9, 140000261);
+informacionTop(semi10, 140000043);
+// Top 10 Medio
+informacionTop(medio1, 140000630);
+informacionTop(medio2, 140000556);
+informacionTop(medio3, 140000348);
+informacionTop(medio4, 140000329);
+informacionTop(medio5, 140000197);
+informacionTop(medio6, 140000467);
+informacionTop(medio7, 140000245);
+informacionTop(medio8, 140000265);
+informacionTop(medio9, 140000604);
+informacionTop(medio10, 140000229);
+// Top 10 Welter
+informacionTop(welter1, 140000521);
+informacionTop(welter2, 140000526);
+informacionTop(welter3, 140000195);
+informacionTop(welter4, 140000196);
+informacionTop(welter5, 140000221);
+informacionTop(welter6, 140000089);
+informacionTop(welter7, 140000444);
+informacionTop(welter8, 140000047);
+informacionTop(welter9, 140000752);
+informacionTop(welter10, 140000144);
+// Top ligero
+informacionTop(ligero1, 140000266);
+informacionTop(ligero2, 140000247);
+informacionTop(ligero3, 140000045);
+informacionTop(ligero4, 140001095);
+informacionTop(ligero5, 140000401);
+informacionTop(ligero6, 140000867);
+informacionTop(ligero7, 140000368);
+informacionTop(ligero8, 140000487);
+informacionTop(ligero9, 140000165);
+informacionTop(ligero10, 140000096);
+// Top 10 Pluma
+informacionTop(pluma1, 140000267);
+informacionTop(pluma2, 140000712);
+informacionTop(pluma3, 140000137);
+informacionTop(pluma4, 140000615);
+informacionTop(pluma5, 140000421);
+informacionTop(pluma6, 140000396);
+informacionTop(pluma7, 140000243);
+informacionTop(pluma8, 140000178);
+informacionTop(pluma9, 140000136);
+informacionTop(pluma10, 140000024);
+// Top 10 Gallo
+informacionTop(gallo1, 140000116);
+informacionTop(gallo2, 140000007);
+informacionTop(gallo3, 140000668);
+informacionTop(gallo4, 140000139);
+informacionTop(gallo5, 140000049);
+informacionTop(gallo6, 140000052);
+informacionTop(gallo7, 140000504);
+informacionTop(gallo8, 140000138);
+informacionTop(gallo9, 140000907);
+informacionTop(gallo10, 140000051);
+// Top 10 Mosca
+informacionTop(mosca1, 140000613);
+informacionTop(mosca2, 140000614);
+informacionTop(mosca3, 140000258);
+informacionTop(mosca4, 140000222);
+informacionTop(mosca5, 140000019);
+informacionTop(mosca6, 140000910);
+informacionTop(mosca7, 140000059);
+informacionTop(mosca8, 140000152);
+informacionTop(mosca9, 140000028);
+informacionTop(mosca10, 140000632);
+// Top 10 Pluma F
+// Top 10 Gallo F
+informacionTop(galloF1, 140000471);
+informacionTop(galloF2, 140000447);
+informacionTop(galloF3, 140000359);
+informacionTop(galloF4, 140000345);
+informacionTop(galloF5, 140000159);
+informacionTop(galloF6, 140000462);
+informacionTop(galloF7, 140000710);
+informacionTop(galloF8, 140000701);
+informacionTop(galloF9, 140000128);
+informacionTop(galloF10, 140000380);
+// Top 10 Mosca F
+informacionTop(moscaF1, 140000349);
+informacionTop(moscaF2, 140000389);
+informacionTop(moscaF3, 140000517);
+informacionTop(moscaF4, 140000205);
+informacionTop(moscaF5, 140000094);
+informacionTop(moscaF6, 140000011);
+informacionTop(moscaF7, 140000333);
+informacionTop(moscaF8, 140000403);
+informacionTop(moscaF9, 140000281);
+informacionTop(moscaF10, 140000397);
+// Top 10 Paja F
+informacionTop(pajaF1, 140000350);
+informacionTop(pajaF2, 140000634);
+informacionTop(pajaF3, 140000394);
+informacionTop(pajaF4, 140000296);
+informacionTop(pajaF5, 140000398);
+informacionTop(pajaF6, 140000235);
+informacionTop(pajaF7, 140000441);
+informacionTop(pajaF8, 140000240);
+informacionTop(pajaF9, 140000140);
+informacionTop(pajaF10, 140000432);
