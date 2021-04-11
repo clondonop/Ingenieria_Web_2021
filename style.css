@@ -6,38 +6,53 @@ body{
     background-color: #000000;
   
 }
-
-
+p{
+    color: #000000;
+}
+#icononav{
+    width:5vw;
+    height: 5vw;
+}
+#T10Femenino{
+    color: #5B2A86;
+}
+#T10Masculino{
+    color: #1E9CC2;
+}
 .Titulos{
     margin: 15px;
     text-align: center;
     color: #d40c10;
     font-family: 'Bebas Neue';
 }
-
-#icononav{
-    width:5vw;
-    height: 5vw;
+.caja{
+    background-color: #bfc0c4b6;
+    font-weight: bold;
+    border-radius: 21px 21px 20px 20px;
 }
-
+.carousel-indicators li {
+      background-color:#a40c0c !important;
+}
+.carousel-indicators .active{
+    background-color: #000 !important;
+}
+.carousel-control-prev-icon{
+   background-image: url("./Images/left-arrow.svg")
+}
+.carousel-control-next-icon{
+    background-image: url("./Images/right-arrow.svg")
+}
 
 /* Animaciones */
 
-.contenedor:hover .bordeimg {
-    -webkit-transform:scale(0.8);
-    transform:scale(0.8);
-}
-.contenedor .bordeimg {
-    overflow:hidden;
-}
-
-h2 {
-    background-image: linear-gradient(transparent calc(65% - 5px), #d40c0fc9 5px);
+h3 {
+    background-image: linear-gradient(transparent calc(65% - 1px), #b12225a9 1px);
     background-size: 0;
     background-repeat: no-repeat;
-    display: inline;
     transition: 0.5s ease;
+    color:#000000
 }
-h2:hover  {
+h3:hover  {
     background-size: 100%;
 }
+

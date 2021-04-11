@@ -171,9 +171,12 @@ const paja1F0 = document.getElementById("pajaF10");
 async function informacionPeleador(elemento, id) {
     await obtenerPeleador(id)
         .then(function ({ FirstName, LastName, Nickname, WeightClass, Height, Weight,  Wins, Losses, Draws, TechnicalKnockouts,  Submissions }) {
-            elemento.insertAdjacentHTML('beforeend', "El peleador se llama " + FirstName + " " + LastName + ", su apodo es " + Nickname + ", pertenece a la categoria " + WeightClass + ", pesa " + Weight + "lb, mide  " + (Height / 39.370) + "m, ha tenido  " + Wins + " victorias, de las cuales " + TechnicalKnockouts + " han sido por K.O,  " + Submissions + " han sido por sumisión, ha empatado " + Draws + ", y perdido " + Losses + " veces");
+            elemento.insertAdjacentHTML('beforeend', "El peleador se llama " + FirstName + " " + LastName + ", su apodo es " + Nickname + ", pertenece a la categoria " + WeightClass + ", pesa " + Weight + "lb, mide  " + redondear((Height / 39.370),2) + "m, ha tenido  " + Wins + " victorias, de las cuales " + TechnicalKnockouts + " han sido por K.O,  " + Submissions + " han sido por sumisión, ha empatado " + Draws + ", y perdido " + Losses + " veces");
 
+        }).catch(function (error) {
+            console.log(error);
         });
+        
 }
 
 async function informacionTop(elemento, id) {
@@ -188,8 +191,14 @@ async function informacionTop(elemento, id) {
 
 }
 
+function redondear(numero, digitos){
+    let base = Math.pow(10, digitos);
+    let entero = Math.round(numero * base);
+    return entero / base;
+}
+
 // Campeones 
-informacionPeleador(camp1, 140000215);
+ informacionPeleador(camp1, 140000215);
 informacionPeleador(camp2, 140000086);
 informacionPeleador(camp3, 140000347);
 informacionPeleador(camp4, 140000145);
