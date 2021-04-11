@@ -132,28 +132,28 @@ const paja9 = document.getElementById("paja9");
 const paja10 = document.getElementById("paja10");
 
 
-const gallo1F = document.getElementById("gallo1F");
-const gallo2F = document.getElementById("gallo2F");
-const gallo3F = document.getElementById("gallo3F");
-const gallo4F = document.getElementById("gallo4F");
-const gallo5F = document.getElementById("gallo5F");
-const gallo6F = document.getElementById("gallo6F");
-const gallo7F = document.getElementById("gallo7F");
-const gallo8F = document.getElementById("gallo8F");
-const gallo9F = document.getElementById("gallo9F");
-const gallo10F = document.getElementById("gallo10F");
+const galloF1 = document.getElementById("galloF1");
+const galloF2 = document.getElementById("galloF2");
+const galloF3 = document.getElementById("galloF3");
+const galloF4 = document.getElementById("galloF4");
+const galloF5 = document.getElementById("galloF5");
+const galloF6 = document.getElementById("galloF6");
+const galloF7 = document.getElementById("galloF7");
+const galloF8 = document.getElementById("galloF8");
+const galloF9 = document.getElementById("galloF9");
+const galloF10 = document.getElementById("galloF10");
 
 
-const mosca1F = document.getElementById("mosca1F");
-const mosca2F = document.getElementById("mosca2F");
-const mosca3F = document.getElementById("mosca3F");
-const mosca4F = document.getElementById("mosca4F");
-const mosca5F = document.getElementById("mosca5F");
-const mosca6F = document.getElementById("mosca6F");
-const mosca7F = document.getElementById("mosca7F");
-const mosca8F = document.getElementById("mosca8F");
-const mosca9F = document.getElementById("mosca9F");
-const mosca10F = document.getElementById("mosca10F");
+const moscaF1 = document.getElementById("moscaF1");
+const moscaF2 = document.getElementById("moscaF2");
+const moscaF3 = document.getElementById("moscaF3");
+const moscaF4 = document.getElementById("moscaF4");
+const moscaF5 = document.getElementById("moscaF5");
+const moscaF6 = document.getElementById("moscaF6");
+const moscaF7 = document.getElementById("moscaF7");
+const moscaF8 = document.getElementById("moscaF8");
+const moscaF9 = document.getElementById("moscaF9");
+const moscaF10 = document.getElementById("moscaF10");
 
 
 const pajaF1 = document.getElementById("pajaF1");
@@ -165,7 +165,7 @@ const pajaF6 = document.getElementById("pajaF6");
 const pajaF7 = document.getElementById("pajaF7");
 const pajaF8 = document.getElementById("pajaF8");
 const pajaF9 = document.getElementById("pajaF9");
-const paja1F10 = document.getElementById("pajaF10");
+const paja1F0 = document.getElementById("pajaF10");
 
 
 async function informacionPeleador(elemento, id) {
