@@ -156,16 +156,16 @@ const mosca9F = document.getElementById("mosca9F");
 const mosca10F = document.getElementById("mosca10F");
 
 
-const paja1F = document.getElementById("paja1F");
-const paja2F = document.getElementById("paja2F");
-const paja3F = document.getElementById("paja3F");
-const paja4F = document.getElementById("paja4F");
-const paja5F = document.getElementById("paja5F");
-const paja6F = document.getElementById("paja6F");
-const paja7F = document.getElementById("paja7F");
-const paja8F = document.getElementById("paja8F");
-const paja9F = document.getElementById("paja9F");
-const paja10F = document.getElementById("paja10F");
+const pajaF1 = document.getElementById("pajaF1");
+const pajaF2 = document.getElementById("pajaF2");
+const pajaF3 = document.getElementById("pajaF3");
+const pajaF4 = document.getElementById("pajaF4");
+const pajaF5 = document.getElementById("pajaF5");
+const pajaF6 = document.getElementById("pajaF6");
+const pajaF7 = document.getElementById("pajaF7");
+const pajaF8 = document.getElementById("pajaF8");
+const pajaF9 = document.getElementById("pajaF9");
+const paja1F10 = document.getElementById("pajaF10");
 
 
 async function informacionPeleador(elemento, id) {
