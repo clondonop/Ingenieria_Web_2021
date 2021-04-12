@@ -203,7 +203,7 @@ informacionPeleador(camp2, 140000086);
 informacionPeleador(camp3, 140000347);
 informacionPeleador(camp4, 140000145);
 informacionPeleador(camp5, 140000074);
-informacionPeleador(camp6, 140000074);
+informacionPeleador(camp6, 140000123);
 informacionPeleador(camp7, 140000098);
 informacionPeleador(camp8, 140000141);
 informacionPeleador(camp9, 140000402);
