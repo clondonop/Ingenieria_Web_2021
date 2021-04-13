@@ -171,7 +171,7 @@ const paja1F0 = document.getElementById("pajaF10");
 async function informacionPeleador(elemento, id) {
     await obtenerPeleador(id)
         .then(function ({ FirstName, LastName, Nickname, WeightClass, Height, Weight,  Wins, Losses, Draws, TechnicalKnockouts,  Submissions }) {
-            elemento.insertAdjacentHTML('beforeend', "El peleador se llama " + FirstName + " " + LastName + ", su apodo es " + Nickname + ", pertenece a la categoria " + WeightClass + ", pesa " + Weight + "lb, mide  " + redondear((Height / 39.370),2) + "m, ha tenido  " + Wins + " victorias, de las cuales " + TechnicalKnockouts + " han sido por K.O,  " + Submissions + " han sido por sumisión, ha empatado " + Draws + ", y perdido " + Losses + " veces");
+            elemento.insertAdjacentHTML('beforeend', "El campeón es " + FirstName + " " + LastName + (Nickname!= null ? ", su apodo es " +Nickname:" " ) + ", pertenece a la categoria " + WeightClass + ", con un peso de " + Weight + "lb y una altura de " + redondear((Height / 39.370),2) + "m, ha tenido  " + Wins + " victorias, de las cuales " + TechnicalKnockouts + " han sido por K.O,  " + Submissions + " han sido por sumisión, ha empatado " + Draws + ", y perdido " + Losses + " veces");
 
         }).catch(function (error) {
             console.log(error);
