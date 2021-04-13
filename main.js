@@ -198,7 +198,7 @@ function redondear(numero, digitos){
 }
 
 // Campeones 
- informacionPeleador(camp1, 140000215);
+informacionPeleador(camp1, 140000215);
 informacionPeleador(camp2, 140000086);
 informacionPeleador(camp3, 140000347);
 informacionPeleador(camp4, 140000145);
