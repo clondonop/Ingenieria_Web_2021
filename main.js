@@ -2,9 +2,9 @@ let url = "https://fly.sportsdata.io/v3/mma/scores/json/";
 let key = "?key=a422a6ac8b9e40268d59c9fd08a10fdb";
 
 function obtenerPeleas() {
-    let urlPelea = url + "UFC/2021";
+    let urlPelea = url + "Schedule/UFC/2021";
     return new Promise(function (resolve, reject) {
-        $.get(urlPeleador + id + key, { crossDomain: true }, function (data) {
+        $.get(urlPelea + key, { crossDomain: true }, function (data) {
             resolve(data);
         }).fail(function (error) {
             reject(error);
@@ -166,6 +166,7 @@ const pajaF7 = document.getElementById("pajaF7");
 const pajaF8 = document.getElementById("pajaF8");
 const pajaF9 = document.getElementById("pajaF9");
 const paja1F0 = document.getElementById("pajaF10");
+
 
 
 async function informacionPeleador(elemento, id) {
