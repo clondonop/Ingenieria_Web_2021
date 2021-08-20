@@ -1,4 +1,4 @@
-let url = "https://fly.sportsdata.io/v3/mma/scores/json/";
+let url = "https://api.sportsdata.io/v3/mma/scores/json/";
 let key = "?key=a422a6ac8b9e40268d59c9fd08a10fdb";
 
 function obtenerPeleas() {
